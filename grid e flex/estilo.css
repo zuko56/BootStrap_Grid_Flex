@@ -1,0 +1,38 @@
+#container{
+    background-color: rgb(155, 34, 185);
+    width: 800px;
+    height: 400px;
+    display: flex; /* torna os itens flexiveis */
+    flex-direction: row; /* direção do flex */
+    flex-wrap: nowrap; /* vai ou não quebrar de linha */
+    justify-content: center; /* ajustes dentro do container no eixo y */
+    align-items: baseline; /* ajustes dentro do container no eixo x */
+    
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(250, 134, 1);
+    margin: 30px;
+  
+    
+}
+/*.item:nth-child(1){ = seleciona o primeiro item do flexbox
+     flex-grow: 5;  determina o tamanho dos itens dentro do container com relação a outros itens
+     flex-shrink: 3; capacidade de encolher o item
+     order: 2; altera a posição do item 
+}*/ 
+.item:nth-child(1){
+    flex-grow: 1;
+   
+
+}
+.item:nth-child(2){
+    flex-shrink: 3;
+ 
+   
+}
+.item:nth-child(3){
+    flex-grow: 1;
+}
+

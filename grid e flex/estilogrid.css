@@ -1,0 +1,54 @@
+#principal{
+    display: grid; /* container passa a se compor de linhas e colunas*/
+    /*grid-template-areas: "cabecalho cabecalho" definindo o layout por linhas e colunas, nesse caso 4 linhas e 2 colunas
+                         "menu    menu"
+                         "conteudo  aside"
+                         "rodape  rodape";*/
+    grid-template-rows: repeat(5, 80px); /* defini a altura das linhas*/
+    grid-template-columns: repeat(5, 1fr); /* defini a largura das colunas*/
+    /*grid-column-gap: 10px;  espaçamento entre as colunas
+    grid-row-gap: 10px; espaçamento entre as linhas*/
+}
+.cabecalho{
+    background-color: red;
+   /* grid-area: cabecalho;  posicionado na area especifica*/
+   /*grid-row-start: 1;  começa na primeira linha*/
+   /*grid-row-end: 2;  termina na segunda pois subtrai -1 linha*/
+    /*grid-column-start: 1; começa na coluna 1 */
+   /*grid-column-end: 6;   termina na coluna 6 */
+}
+.menu{
+    background-color: blue;
+    /*grid-area: menu;
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    grid-column-start: 1;
+    grid-column-end: 6;*/
+}
+.conteudo{
+    background-color: green;
+    /*grid-area: conteudo;
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-self: stretch; faz o alinhamento vertical das celulas, start, end, center
+    justify-self: stretch; alinha na horizontal
+    place-self: start; ajusta na horizontal e vertical*/
+}
+.secundario{
+    background-color: violet;
+    /*grid-area: aside;
+    grid-row-start: 3; 
+    grid-row-end: 5; 
+    grid-column-start: 4;
+    grid-column-end: 6;*/
+}
+.rodape{
+    background-color: darkgoldenrod;
+    /*grid-area: rodape;
+    grid-row-start: 5; 
+    grid-row-end: 5; 
+    grid-column-start: 1;
+    grid-column-end: 6;*/
+}

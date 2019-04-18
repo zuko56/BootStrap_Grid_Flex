@@ -1,0 +1,34 @@
+.container-fluid{
+    background-color: black;
+    height: 1200px;
+}
+#header{
+    background-color: cornflowerblue;
+    height: 150px;
+}
+#esq{
+    background-color: darkorange;
+    height: 900px;
+}
+#dir{
+    background-color: green;
+    height: 900px;
+}
+#rodape{
+    background-color: gold;
+    height: 150px;
+}
+.btn-outline-success{
+    top: 10%;
+    position: relative;
+    background-color: #fff;
+}
+.bd-example{
+    position: relative;
+    top: 10%;
+}
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.45);
+    
+}
+
